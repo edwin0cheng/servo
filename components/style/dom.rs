@@ -6,6 +6,7 @@
 
 #![allow(unsafe_code)]
 
+use {Atom, Namespace, LocalName};
 use atomic_refcell::{AtomicRef, AtomicRefMut};
 use data::{ElementStyles, ElementData};
 use element_state::ElementState;
@@ -18,7 +19,6 @@ use sink::Push;
 use std::fmt::Debug;
 use std::ops::BitOr;
 use std::sync::Arc;
-use string_cache::{Atom, Namespace};
 use traversal::DomTraversalContext;
 use util::opts;
 
